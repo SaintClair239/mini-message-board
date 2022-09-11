@@ -14,5 +14,8 @@ const messages = [
 ];
 
 exports.getMessages = (req, res, next) => {
+  console.log(messages);
   res.render(path.join('index'), { msgs: messages });
 };
+
+exports.messages = messages;
